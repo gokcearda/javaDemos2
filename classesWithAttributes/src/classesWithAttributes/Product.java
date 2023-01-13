@@ -2,6 +2,18 @@ package classesWithAttributes;
 
 public class Product {
 
+	public Product(int id, String name, String description, double price, int stockAmount, String renk) {
+		System.out.println("Yapıcı blok çalıştı.");
+		this._id=id;
+		this.renk=renk;
+		this.name=name;
+		this.price=price;
+		this.stockAmount=stockAmount;
+		this.description=description;
+	}
+	public Product() {
+		//bu şekilde ikinciye aynı isimde metot oluşturmaya aşırı yükleme(overloading) denir.
+	}
 	// attribute ya da field olarak adlandırılan kısım
 	int _id;
 	private String name;
